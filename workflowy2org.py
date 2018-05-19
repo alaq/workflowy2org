@@ -11,8 +11,12 @@ wfDone = "[COMPLETE]"
 orgDone = "DONE"
 
 for num, line in enumerate(open(in_name)):
-    dash = line.find("-")
-    if dash != -1:
+    if line.isspace():
+        outfile.write(line + "\n")
+        continue
+
+    if line.strip()[0] == "-":
+      dash = line.find("-")
       line = line[dash + 1:].strip() # get line contents only
       if line.startswith(wfDone):
           line = line.replace(wfDone, orgDone, 1) # replace a single occurrence
