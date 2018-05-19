@@ -1,3 +1,5 @@
+Disclaimer: this project was written by [m-cat](https://github.com/m-cat/workflowy2org) originally. This is my Python 3 version, with support for Workflowy notes.
+
 # Workflowy 2 Org-Mode
 
 A script for converting Workflowy lists to .org files so they can be used in Emacs org-mode. Requires Python 2.
